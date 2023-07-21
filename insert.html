@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="position">
+    <input type="text "id="value">
+<button onclick="insert()">Submit</button>
+    
+</body>
+<script>
+    function insert(){
+    let data = [60,30,10,67];
+    let newEl = document.getElementById('value').value;
+    newEl = parseInt(newEl)
+   let  position =  document.getElementById('position').value;
+
+for (i=data.length-1; i>=0; i--){
+    if(i>=position){
+        data[i+1]=data[i]
+
+        //    newPosition(4)  = currrent data(67)
+        if(i==position){
+             data[i]=newEl
+        }
+    }
+
+}
+console.log(data)
+    }
+   
+</script>
+
+</html>

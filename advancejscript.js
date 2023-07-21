@@ -176,3 +176,37 @@
 // }).catch((cst)=>{
 //     console.log('catch block',cst)
 // })
+
+
+
+// REST OPERATOR
+
+
+// function rest (...a){
+//     console.log('fruits',a)
+// }
+ 
+// rest('apple','banana','kiwi','orange')
+
+
+
+//Closure
+// let data = 10;
+// function test(){
+//     console.log(data)
+// }
+// test();
+
+
+// function outer(){
+// let outerValue = 100
+// return function test(){
+//     let a = 100;
+//     return function inner(){
+//         return a * outerValue
+//     }
+// }
+// }
+// let test = outer()
+// let inner = test()
+// console.log(inner())
